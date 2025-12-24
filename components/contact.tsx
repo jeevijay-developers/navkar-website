@@ -3,17 +3,18 @@
 import type React from "react";
 
 import { useState } from "react";
+import toast from "react-hot-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 
 const contactInfo = [
   {
     icon: MapPin,
     label: "Address",
-    value: "Gujarat, India",
+    value: "GIDC Panoli & Ankleshwar, Gujarat, India",
   },
   {
     icon: Phone,
@@ -23,7 +24,7 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@blowpack.com",
+    value: "info@shrinavkarblowpack.com",
   },
   {
     icon: Clock,
@@ -41,9 +42,73 @@ export function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3_FORM_ACCESS_KEY,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          message: formData.message,
+          from_name: "Shri Navkar Blowpack - Contact Form",
+          replyto: formData.email,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success("Thanks for contacting us! We'll get back to you soon.", {
+          duration: 5000,
+          position: "top-center",
+          style: {
+            background: "#10b981",
+            color: "#fff",
+            padding: "16px",
+            borderRadius: "8px",
+          },
+        });
+
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          message: "",
+        });
+      } else {
+        throw new Error(data.message || "Something went wrong");
+      }
+    } catch (error) {
+      toast.error(
+        "Failed to send message. Please try again or contact us directly.",
+        {
+          duration: 5000,
+          position: "top-center",
+          style: {
+            background: "#ef4444",
+            color: "#fff",
+            padding: "16px",
+            borderRadius: "8px",
+          },
+        }
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -144,9 +209,20 @@ export function Contact() {
 
               <Button
                 type="submit"
-                className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
+                disabled={isSubmitting}
+                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 disabled:opacity-50"
               >
-                Send Message
+                {isSubmitting ? (
+                  <>
+                    <span className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-accent-foreground border-t-transparent" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send className="mr-2 h-5 w-5" />
+                    Send Message
+                  </>
+                )}
               </Button>
             </form>
           </div>

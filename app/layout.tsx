@@ -1,6 +1,6 @@
 import type React from "react";
 import type { Metadata, Viewport } from "next";
-
+import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -74,6 +74,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         <Analytics />
+        <Toaster />
       </body>
     </html>
   );

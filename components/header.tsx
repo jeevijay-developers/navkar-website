@@ -9,10 +9,10 @@ import Image from "next/image";
 const storeUrl = process.env.NEXT_PUBLIC_STORE_URL || "#";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#about" },
-  { name: "Services", href: "#services" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
   { name: "Store", href: storeUrl, external: true },
+  { name: "Contact", href: "/contact" },
 ];
 
 export function Header() {
@@ -109,15 +109,19 @@ export function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden items-center gap-3 lg:flex">
-          <Button variant="outline" size="sm">
-            Request Quote
-          </Button>
-          <Button
-            size="sm"
-            className="bg-accent text-accent-foreground hover:bg-accent/90"
+          <Link
+            href={`${storeUrl}`}
+            prefetch={false}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Get in Touch
-          </Button>
+            <Button
+              size="sm"
+              className="bg-accent text-accent-foreground hover:bg-accent/90"
+            >
+              Visit our store
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
