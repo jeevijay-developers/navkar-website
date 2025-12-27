@@ -10,10 +10,10 @@ const footerLinks = {
     { name: "News", href: "#" },
   ],
   products: [
-    { name: "PET Bottles", href: "#products" },
-    { name: "HDPE Containers", href: "#products" },
-    { name: "Jars & Wide-Mouth", href: "#products" },
-    { name: "Custom Solutions", href: "#products" },
+    { name: "Round Bottles", href: "#products" },
+    { name: "Jerry Can", href: "#products" },
+    { name: "Cap", href: "#products" },
+    { name: "MCup", href: "#products" },
   ],
   services: [
     { name: "Blow Moulding", href: "#services" },
@@ -61,7 +61,7 @@ export function Footer() {
               </a>
               <div className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
-                <span>Ahmedabad, Gujarat, India</span>
+                <span>Ankleshwar, Gujarat, India</span>
               </div>
             </div>
           </div>

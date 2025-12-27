@@ -8,7 +8,7 @@ const leaders = [
     image: "/suresh.png",
   },
   {
-    name: "Deepak Nahar Ji",
+    name: "Deepak Nahar ",
     role: "Partnership",
     bio: "At Shri Navkar Blowpack, we strive for excellence by blending cutting-edge technology with customer-centric solutions. Together, we aim to deliver packaging that sets industry benchmarks and fosters long-term partnership.",
     image: "/deepak.png",
@@ -34,7 +34,7 @@ export function Leadership() {
         </div>
 
         {/* Leaders grid - 1 col mobile, 2 tablet, 3 desktop */}
-        <div className="mt-10 grid gap-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        <div className="mt-10 flex justify-center gap-6 sm:mt-16 lg:gap-8">
           {leaders.map((leader) => (
             <div
               key={leader.name}
