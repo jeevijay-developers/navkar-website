@@ -9,7 +9,7 @@ const leaders = [
   },
   {
     name: "Deepak Nahar ",
-    role: "Partnership",
+    role: "Managing Director",
     bio: "At Shri Navkar Blowpack, we strive for excellence by blending cutting-edge technology with customer-centric solutions. Together, we aim to deliver packaging that sets industry benchmarks and fosters long-term partnership.",
     image: "/deepak.png",
   },

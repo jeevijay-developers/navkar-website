@@ -59,24 +59,26 @@ const qualityTests = [
     icon: Shield,
     title: "Leakage Testing",
     description:
-      "Comprehensive leak testing to guarantee product containment and safety.",
+      "Comprehensive leak testing to ensure product containment and safety. Every bottle is checked through online leak testing.",
   },
   {
     icon: Award,
-    title: "Drop Testing",
+    title: "Drop Test",
     description:
       "Rigorous drop testing to validate durability and performance standards.",
   },
 ];
 
 const products = [
-  "Monolayer and Multilayer bottles and containers",
+  "Monolayer and Multilayer bottles and Jerrycans",
   "Industry-standard and customized bottles",
   "Caps, closures, and measuring cups",
   "Rigid packaging solutions for liquids and powders",
   "Agrochemicals and Pesticides packaging",
   "Fungicides and Bio-nutrients containers",
   "Farm Chemicals and specialty products",
+  "High-Barrier COEX EVOH/PA Multilayer Bottles",
+
 ];
 
 const testimonials = [
@@ -276,8 +278,8 @@ export default function AboutPage() {
                 What We Do
               </h2>
               <p className="mt-4 text-pretty text-base text-muted-foreground sm:text-lg">
-                We specialize in the design and manufacturing of Blow and
-                Injection moulded plastic products.
+                We specialize in the manufacturing of blow- and injection-moulded plastic products for agrochemical use.
+
               </p>
             </div>
 
@@ -345,8 +347,7 @@ export default function AboutPage() {
                 Rigorous Quality Control
               </h2>
               <p className="mt-4 text-pretty text-base text-muted-foreground sm:text-lg">
-                Every product undergoes comprehensive testing to ensure it meets
-                the highest standards.
+                Robust quality control systems ensure our bottles and caps meet the demanding requirements of agrochemical and solvent Applications.
               </p>
             </div>
 

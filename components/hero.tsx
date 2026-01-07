@@ -17,13 +17,13 @@ export function Hero() {
             
             <div className="mb-6 inline-flex items-center rounded-full border border-border bg-background px-4 py-1.5 text-sm text-muted-foreground sm:align-center ">
                 <span className="mr-2 h-2 w-2 rounded-full bg-accent" />
-               Trusted Global Partner in Plastic Packaging
+               Trusted  Partner in Plastic Packaging
               </div>
 
             <h1 className="text-balance font-serif text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
               High-Performance Packaging for{" "}
               <span className="text-accent">
-                Agrochemical & Specialty Industries
+                Agrochemical Industries
               </span>
             </h1>
 
