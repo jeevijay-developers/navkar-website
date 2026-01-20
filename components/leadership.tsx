@@ -22,7 +22,7 @@ export function Leadership() {
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-accent">
-            Founders & Partnerships
+           Leadership: Founder & Managing Director
           </p>
           <h2 className="mt-2 text-balance font-serif text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl">
             Leadership That Shapes Our Vision

@@ -49,7 +49,7 @@ const milestones = [
     year: "Global",
     title: "Market Expansion",
     description:
-      "Serving global markets across agrochemical and specialty chemical industries.",
+      "Serving premium customers across India in the agrochemical and specialty chemical industries.",
   },
 ];
 
