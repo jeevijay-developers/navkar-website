@@ -71,10 +71,10 @@ export function Hero() {
           </div>
 
           {/* Image */}
-          <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none">
+          <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-[40rem]">
             <div className="aspect-4/3 overflow-hidden rounded-xl bg-muted sm:rounded-2xl lg:aspect-4/5">
               <img
-                src="/industrial-plastic-packaging-manufacturing-facilit.jpg"
+                src="/navkar.png"
                 alt="Modern plastic packaging manufacturing facility"
                 className="h-full w-full object-cover"
               />
