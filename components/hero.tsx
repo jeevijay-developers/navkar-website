@@ -74,7 +74,7 @@ export function Hero() {
           <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-[40rem]">
             <div className="aspect-4/3 overflow-hidden rounded-xl bg-muted sm:rounded-2xl lg:aspect-4/5">
               <img
-                src="/navkar.png"
+                src="/heroSection.jpeg"
                 alt="Modern plastic packaging manufacturing facility"
                 className="h-full w-full object-cover"
               />
