@@ -1,4 +1,4 @@
-import Link from "next/link";
+  import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 
@@ -10,14 +10,14 @@ const footerLinks = {
     { name: "News", href: "#" },
   ],
   products: [
-    { name: "PET Bottles", href: "#products" },
-    { name: "HDPE Containers", href: "#products" },
-    { name: "Jars & Wide-Mouth", href: "#products" },
-    { name: "Custom Solutions", href: "#products" },
+    { name: "Round Bottles", href: "#products" },
+    { name: "Jerry Can", href: "#products" },
+    { name: "Cap", href: "#products" },
+    { name: "MCup", href: "#products" },
   ],
   services: [
     { name: "Blow Moulding", href: "#services" },
-    { name: "Custom Design", href: "#services" },
+    { name: "Custom Design Development", href: "#services" },
     { name: "Mould Development", href: "#services" },
     { name: "Quality Assurance", href: "#services" },
   ],
@@ -39,8 +39,7 @@ export function Footer() {
               />
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
-              Trusted global partner in HDPE and multilayer barrier packaging
-              for agrochemical and specialty chemical industries.
+              Delivering HDPE and multilayer barrier packaging solutions for agrochemical and pesticide packaging needs.
             </p>
 
             {/* Contact info */}
@@ -53,16 +52,34 @@ export function Footer() {
                 <span>+91-2646-221638</span>
               </a>
               <a
+                href="tel:+916358940904"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
+              >
+                <Phone className="h-4 w-4" />
+                <span>+91-6358940904</span>
+              </a>
+              <a
                 href="mailto:info@blowpack.com"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
               >
                 <Mail className="h-4 w-4" />
                 <span>info@blowpack.com</span>
               </a>
+
               <div className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
-                <span>Ahmedabad, Gujarat, India</span>
+                <span>
+                  Unit-I, Plot No. 3540-3541, G.I .D.C, PANOLI -394 116, Dist, Bharuch. Gujarat, INDIA
+                </span>
+
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
+                <span>
+                  Unit-II, Plot No, 120-121/11 & 12, GIDC Ind. Estate, Ankleshwar-393002. Gujarat, INDIA
+                </span>
+
+
               </div>
+
             </div>
           </div>
 
@@ -127,30 +144,8 @@ export function Footer() {
             reserved.
           </p>
 
-          {/* Social links */}
-          <div className="flex gap-3 sm:gap-4">
-            <a
-              href="#"
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-background text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground sm:h-9 sm:w-9"
-            >
-              <Facebook className="h-4 w-4" />
-              <span className="sr-only">Facebook</span>
-            </a>
-            <a
-              href="#"
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-background text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground sm:h-9 sm:w-9"
-            >
-              <Linkedin className="h-4 w-4" />
-              <span className="sr-only">LinkedIn</span>
-            </a>
-            <a
-              href="#"
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-background text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground sm:h-9 sm:w-9"
-            >
-              <Twitter className="h-4 w-4" />
-              <span className="sr-only">Twitter</span>
-            </a>
-          </div>
+         
+         
         </div>
       </div>
     </footer>

@@ -2,14 +2,14 @@ import { Linkedin, Mail } from "lucide-react";
 
 const leaders = [
   {
-    name: "Suresh Nahar Ji",
+    name: "Suresh Nahar",
     role: "Founder",
     bio: "Our journey began in 1984 with a vision to revolutionize the packaging industry. With dedication and innovation, we've built a legacy of trust, quality, and customer satisfaction that continues to guide us today.",
     image: "/suresh.png",
   },
   {
-    name: "Deepak Nahar Ji",
-    role: "Partnership",
+    name: "Deepak Nahar ",
+    role: "Managing Director",
     bio: "At Shri Navkar Blowpack, we strive for excellence by blending cutting-edge technology with customer-centric solutions. Together, we aim to deliver packaging that sets industry benchmarks and fosters long-term partnership.",
     image: "/deepak.png",
   },
@@ -22,7 +22,7 @@ export function Leadership() {
         {/* Section header */}
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-accent">
-            Founders & Partnerships
+           Leadership: Founder & Managing Director
           </p>
           <h2 className="mt-2 text-balance font-serif text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl">
             Leadership That Shapes Our Vision
@@ -34,7 +34,7 @@ export function Leadership() {
         </div>
 
         {/* Leaders grid - 1 col mobile, 2 tablet, 3 desktop */}
-        <div className="mt-10 grid gap-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        <div className="mt-10 flex justify-center gap-6 sm:mt-16 lg:gap-8">
           {leaders.map((leader) => (
             <div
               key={leader.name}

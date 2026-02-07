@@ -41,15 +41,15 @@ const contactInfo = [
 
 const locations = [
   {
-    name: "Unit I - Panoli",
+    name: "Registered Office & FACTORY",
     address:
-      "Plot No: 3540-3541, Opp: HBS Pharma Sez, GIDC Panoli - 394116, India",
+      "Unit-l, Plot No. 3540-3541, G.I .D.C, PANOLI -394 116, Dist, Bharuch. Gujarat, INDIA",
     icon: Building2,
   },
   {
-    name: "Unit II - Ankleshwar",
+    name: "Corporate Office Address",
     address:
-      "Plot No: 120-121-11 & 12, GIDC Ankleshwar - 393002, Gujarat, India",
+      "Unit-Il, Plot No, 120-121/11 & 12, GIDC Ind. Estate, Ankleshwar-393002. Gujarat, INDIA",
     icon: Building2,
   },
 ];
@@ -162,7 +162,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col pt-[80px]">
       <Header />
       <main className="flex-1">
         {/* Hero Section */}

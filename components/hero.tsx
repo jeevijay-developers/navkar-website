@@ -12,20 +12,21 @@ const features = [
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-linear-to-b from-muted/50 to-background">
+    <section className="relative overflow-hidden bg-linear-to-b from-muted/50 to-background pt-[80px]">
       <div className="mx-auto max-w-400 px-4 py-12 sm:px-6 sm:pb-20 lg:px-8 lg:pb-28">
         <div className="grid items-start pt-10 gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Content */}
           <div className="flex flex-col items-start text-center lg:items-start lg:text-left">
-            <div className="mb-4 inline-flex items-center rounded-full border border-border bg-background px-3 py-1 text-xs sm:px-4 sm:py-1.5 sm:text-sm text-muted-foreground">
-              <span className="mr-2 h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-accent" />
-              Trusted Global Partner in Plastic Packaging
-            </div>
+            
+            <div className="mb-6 inline-flex items-center rounded-full border border-border bg-background px-4 py-1.5 text-sm text-muted-foreground sm:align-center ">
+                <span className="mr-2 h-2 w-2 rounded-full bg-accent" />
+               Trusted  Partner in Plastic Packaging
+              </div>
 
             <h1 className="text-balance font-serif text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
               High-Performance Packaging for{" "}
               <span className="text-accent">
-                Agrochemical & Specialty Industries
+                Agrochemical Industries
               </span>
             </h1>
 
@@ -37,11 +38,15 @@ export function Hero() {
             </p>
 
             {/* Feature badges - stack on mobile */}
-            <div className="mt-6 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
-              {features.map((feature) => (
+            <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-3 sm:mt-8 sm:grid-cols-3 sm:gap-4">
+              {features.map((feature, index) => (
                 <div
                   key={feature}
-                  className="flex items-center justify-center gap-2 text-sm text-foreground lg:justify-start"
+                  className={`flex items-center gap-2 text-[12px] text-foreground ${
+                    index === 2
+                      ? "col-span-2 justify-center sm:col-span-1 sm:justify-start"
+                      : ""
+                  }`}
                 >
                   <CheckCircle className="h-4 w-4 text-accent" />
                   <span>{feature}</span>
@@ -50,7 +55,7 @@ export function Hero() {
             </div>
 
             {/* CTAs - full width on mobile */}
-            <div className="mt-8 flex w-full flex-col gap-3 sm:mt-10 sm:w-auto sm:flex-row sm:gap-4">
+            <div className="mt-8 grid w-full grid-cols-2 gap-3 sm:mt-10 sm:w-auto sm:flex sm:flex-row sm:gap-4">
               <Button
                 size="lg"
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 sm:w-auto"
@@ -75,10 +80,10 @@ export function Hero() {
           </div>
 
           {/* Image */}
-          <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none">
+          <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-[40rem]">
             <div className="aspect-4/3 overflow-hidden rounded-xl bg-muted sm:rounded-2xl lg:aspect-4/5">
               <img
-                src="/industrial-plastic-packaging-manufacturing-facilit.jpg"
+                src="/heroSection.jpeg"
                 alt="Modern plastic packaging manufacturing facility"
                 className="h-full w-full object-cover"
               />
