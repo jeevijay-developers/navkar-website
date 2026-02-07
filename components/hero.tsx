@@ -1,5 +1,8 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import Link from "next/link";
 
 const features = [
   "UN-Certified Packaging",
@@ -51,17 +54,23 @@ export function Hero() {
               <Button
                 size="lg"
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 sm:w-auto"
+                onClick={() => {
+                  const productsSection = document.getElementById('products');
+                  productsSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 Explore Products
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="w-full sm:w-auto bg-transparent"
-              >
-                Request a Quote
-              </Button>
+              <Link href="/contact">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full sm:w-auto bg-transparent"
+                >
+                  Request a Quote
+                </Button>
+              </Link>
             </div>
           </div>
 
