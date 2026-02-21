@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { IoLogoWhatsapp } from "react-icons/io5";
 import { Mail, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -59,7 +60,8 @@ export function Header() {
             href="tel:+916358940904"
             className="flex items-center gap-2 hover:text-foreground"
           >
-            <MessageCircle className="h-4 w-4" />
+            {/* <MessageCircle  /> */}
+            <IoLogoWhatsapp className="h-4 w-4" />
             <span>+91 6358 940 904</span>
           </a>
           <a
