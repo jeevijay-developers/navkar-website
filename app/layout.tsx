@@ -40,20 +40,8 @@ export const metadata: Metadata = {
     "Leading manufacturer of blow-moulded plastic containers and packaging solutions with 30+ years of expertise. Quality, reliability, and innovation.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
+    icon: "/apple-icon.png",
+    shortcut: "/apple-icon.png",
     apple: "/apple-icon.png",
   },
 };
