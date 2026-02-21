@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Mail, Menu, Phone, X } from "lucide-react";
+import { Mail, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -59,7 +59,7 @@ export function Header() {
             href="tel:+916358940904"
             className="flex items-center gap-2 hover:text-foreground"
           >
-            <Phone className="h-4 w-4" />
+            <MessageCircle className="h-4 w-4" />
             <span>+91 6358 940 904</span>
           </a>
           <a
@@ -202,7 +202,7 @@ export function Header() {
                   href="tel:+916358940904"
                   className="flex items-center gap-3 text-sm text-muted-foreground"
                 >
-                  <Phone className="h-4 w-4" />
+                  <MessageCircle className="h-4 w-4" />
                   <span>+91 6358 940 904</span>
                 </a>
                 <a
