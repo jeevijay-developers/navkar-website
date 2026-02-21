@@ -23,8 +23,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email Address",
-    value: "info@shrinavkarblowpack.com",
-    link: "mailto:info@shrinavkarblowpack.com",
+    value: "info@shrinavkar.co.in",
+    link: "mailto:info@shrinavkar.co.in",
   },
   {
     icon: Phone,

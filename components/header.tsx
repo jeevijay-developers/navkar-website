@@ -63,11 +63,11 @@ export function Header() {
             <span>+91 6358 940 904</span>
           </a>
           <a
-            href="mailto:info@blowpack.com"
+            href="mailto:info@shrinavkar.co.in"
             className="flex items-center gap-2 hover:text-foreground"
           >
             <Mail className="h-4 w-4" />
-            <span>info@blowpack.com</span>
+            <span>info@shrinavkar.co.in</span>
           </a>
         </div>
       </div>
@@ -206,11 +206,11 @@ export function Header() {
                   <span>+91 6358 940 904</span>
                 </a>
                 <a
-                  href="mailto:info@blowpack.com"
+                  href="mailto:info@shrinavkar.co.in"
                   className="flex items-center gap-3 text-sm text-muted-foreground"
                 >
                   <Mail className="h-4 w-4" />
-                  <span>info@blowpack.com</span>
+                  <span>info@shrinavkar.co.in</span>
                 </a>
               </div>
               <div className="flex flex-col gap-2">

@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@shrinavkarblowpack.com",
+    value: "info@shrinavkar.co.in",
   },
   {
     icon: Clock,

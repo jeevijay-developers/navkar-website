@@ -59,11 +59,11 @@ export function Footer() {
                 <span>+91-6358940904</span>
               </a>
               <a
-                href="mailto:info@blowpack.com"
+                href="mailto:info@shrinavkar.co.in"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
               >
                 <Mail className="h-4 w-4" />
-                <span>info@blowpack.com</span>
+                <span>info@shrinavkar.co.in</span>
               </a>
 
               <div className="flex items-start gap-2 text-sm text-muted-foreground">
