@@ -57,10 +57,11 @@ export function Header() {
             <span>+91-2646-221638</span>
           </a>
           <a
-            href="tel:+916358940904"
+             href="https://wa.me/916358940904"
+              target="_blank"
             className="flex items-center gap-2 hover:text-foreground"
           >
-            {/* <MessageCircle  /> */}
+            
             <IoLogoWhatsapp className="h-4 w-4" />
             <span>+91 6358 940 904</span>
           </a>
